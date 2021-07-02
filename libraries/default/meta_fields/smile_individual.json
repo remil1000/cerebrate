@@ -1,0 +1,69 @@
+{
+    "name": "SecurityMadeIn.lu member fields",
+    "namespace": "securitymadeinlu",
+    "description": "Indidivual entry of a SecurityMadeIn.lu member",
+    "version": 1,
+    "scope": "individual",
+    "uuid": "abae9a1b-fb08-4d58-aa90-71bb3388ce60",
+    "source": "securitymadein.lu",
+    "metaFields": [
+        {
+            "field": "firstname",
+            "type": "text"
+        },
+        {
+            "field": "lastname",
+            "type": "text"
+        },
+        {
+            "field": "department",
+            "type": "text"
+        },
+        {
+            "field": "email",
+            "type": "text",
+            "multiple": "1",
+            "regex": "/^[\\w\\.\\+-]+@[\\w\\.-]+$/"
+        },
+        {
+            "field": "country",
+            "type": "text"
+        },
+        {
+            "field": "phone",
+            "type": "text",
+            "regex": "/^\\+[0-9]*$/"
+        },
+        {
+            "field": "mobile_phone",
+            "type": "text",
+            "regex": "/^\\+[0-9]*$/"
+        },
+        {
+            "field": "active",
+            "type": "boolean"
+        },
+        {
+            "field": "role",
+            "type": "text",
+            "regex": "/^(employee|trainee|external)$/"
+        },
+        {
+            "field": "gpg_key_fingerprint",
+            "type": "text",
+            "regex": "/^[\\dA-F]{8,}$/",
+            "multiple": 1
+        },
+        {
+            "field": "ssh_public_key",
+            "type": "text",
+            "regex": "/^ssh-.*/",
+            "multiple": 1
+        },
+        {
+            "field": "preferred_username",
+            "type": "text",
+            "regex": "/^[a-z][a-z0-9]+$/"
+        }
+    ]
+}
